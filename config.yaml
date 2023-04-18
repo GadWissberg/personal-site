@@ -149,39 +149,63 @@ params:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "Scala"
-        - "Java"
-        - "Kotlin"
-        - "Node.js"
-        - "Angular"
-        - "Python"
+        - "Languages: Scala, Java, Kotlin, TypeScript, JS, SQL, HTML/CSS, Python"
+        - "DB: PostgreSQL, MongoDB, Oracle"
+        - "Web Development: Node.js, Angular, Spring, Kafka, AWS, Coralogix, Grafana"
+        - "OS: Windows, macOS, Linux"
+        - "Game Development: libGdx, openGL, GameMaker, Blender, Photoshop"
+        - "Other tools: Docker, Kubernetes, Terraform"
 
   # Experience
   experience:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Software Developer"
+      - job: "Backend Developer"
         company: "Riskified"
         companyUrl: "https://www.riskified.com/"
         date: "June 2022 - present"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
         info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          enable: false
+        content: | 
+          I'm currently working as a backend developer at [Riskified.](https://riskified.com) in Tel-Aviv, Israel. My main responsibility is to develop and maintain microservices using Scala and Node.js in a real-time production environment. My work involves the entire software development lifecycle, from designing and refining services to coding, testing, and deploying new features. I also play a role as a shifter, ensuring smooth operations of the production environment for our SAAS products.
+        
+          To improve my backend development skills, I prioritize continuous learning and staying up-to-date with the latest trends and technologies in the field. I attend conferences, take online courses, read blogs and books, and participate in online communities and forums. Additionally, I focus on writing clean, efficient, and maintainable code by following best practices and writing unit tests and integration tests.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
+          Collaboration is key in my work, and I strive to communicate clearly and share knowledge and ideas with my team members. I use version control systems like Git to manage code changes and work collaboratively on code. To automate the development process and reduce manual processes, I use tools like CircleCI, Docker, and Kubernetes to automate build, test, and deployment processes.
+
+          Continuous monitoring and analysis of service performance is essential to ensure optimal performance. I use monitoring tools like Coralogix, Grafana and Prometheus to collect metrics and visualize data, enabling me to identify bottlenecks and areas for improvement.
+
+      - job: "Backend Developer"
+        company: "Viaccess-Orca"
+        companyUrl: "https://www.viaccess-orca.com"
+        date: "Sep 2020 - June 2022"
+        info:
+          enable: false
+        content: |
+          Java back-end development, using Spring Boot in a microservice architecture. Mostly object-oriented, but also
+          developing in aspect-oriented. Development includes REST APIs, implementing features from the high-level
+          design (including Swagger), through low-level design, implementation and writing tests (unit, component,
+          integration and E2E) and also performing stress-tests (analyzing network, CPU, DB usage).
+          
+          Implementations include usage of MongoDB, taking into considerations major factors such as indexing, adding
+          views in other microservices and optimized interactions with the DB. Also fair experience with OracleDB.
+          Using and integrating Kafka for events distribution in a microservice environment. This includes analyzing and
+          debugging Kafka integration with the product for an optimized performance.
+          
+          Handling support requests - Investigating product’s log files produced in the client’s machines in order to analyze,
+          reproduce and fix bugs.
+          
+          Containerization - Working and deploying in Kubernetes for E2E tests, and viewing logs directly or Kibana. Using
+          Docker and VM environments for component and stress tests. Also fair experience with AWS.
+          
+          Presenting demo sessions to relevant audiences for new features implemented by me and teammates.
+          Leading integration for various features that require several microservices which are under the responsibility of
+          other teams. These tasks require more communication with other teams, rather than concrete implementation.
+          
+          Development and deployment in Linux CentOS and Windows environments.
+          Full teamwork in SAFe routine through each PI, mainly with developers, PMs and architects.
+          Working with auxiliary development services such as Jira, Git, Gitlab and Jenkins
 
       - job: "Junior Software Developer"
         company: "Apple"
