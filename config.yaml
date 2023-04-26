@@ -153,7 +153,7 @@ params:
         - "DB: PostgreSQL, MongoDB, Oracle"
         - "Web Development: Node.js, Angular, Spring, Kafka, AWS, Coralogix, Grafana"
         - "OS: Windows, macOS, Linux"
-        - "Game Development: libGdx, openGL, GameMaker, Blender, Photoshop"
+        - "Game Development: Android, libGdx, openGL, GameMaker, Blender, Photoshop"
         - "Other tools: Docker, Kubernetes, Terraform"
 
   # Experience
@@ -161,15 +161,15 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - job: "Backend Developer"
+      - job: "Fullstack Developer"
         company: "Riskified"
         companyUrl: "https://www.riskified.com/"
-        date: "June 2022 - present"
+        date: "2022-present"
         info:
           enable: false
-        content: | 
-          I'm currently working as a backend developer at [Riskified.](https://riskified.com) in Tel-Aviv, Israel. My main responsibility is to develop and maintain microservices using Scala and Node.js in a real-time production environment. My work involves the entire software development lifecycle, from designing and refining services to coding, testing, and deploying new features. I also play a role as a shifter, ensuring smooth operations of the production environment for our SAAS products.
-        
+        content: |
+          I'm currently working as a fullstack developer at [Riskified.](https://riskified.com) in Tel-Aviv, Israel. My main responsibility is to develop and maintain microservices using Scala and Node.js in a real-time production environment. My work involves the entire software development lifecycle, from designing and refining services to coding, testing, and deploying new features. I also play a role as a shifter, ensuring smooth operations of the production environment for our SAAS products.
+
           To improve my backend development skills, I prioritize continuous learning and staying up-to-date with the latest trends and technologies in the field. I attend conferences, take online courses, read blogs and books, and participate in online communities and forums. Additionally, I focus on writing clean, efficient, and maintainable code by following best practices and writing unit tests and integration tests.
 
           Collaboration is key in my work, and I strive to communicate clearly and share knowledge and ideas with my team members. I use version control systems like Git to manage code changes and work collaboratively on code. To automate the development process and reduce manual processes, I use tools like CircleCI, Docker, and Kubernetes to automate build, test, and deployment processes.
@@ -179,7 +179,7 @@ params:
       - job: "Backend Developer"
         company: "Viaccess-Orca"
         companyUrl: "https://www.viaccess-orca.com"
-        date: "Sep 2020 - June 2022"
+        date: "2020-2022"
         info:
           enable: false
         content: |
@@ -187,59 +187,68 @@ params:
           developing in aspect-oriented. Development includes REST APIs, implementing features from the high-level
           design (including Swagger), through low-level design, implementation and writing tests (unit, component,
           integration and E2E) and also performing stress-tests (analyzing network, CPU, DB usage).
-          
+
           Implementations include usage of MongoDB, taking into considerations major factors such as indexing, adding
           views in other microservices and optimized interactions with the DB. Also fair experience with OracleDB.
           Using and integrating Kafka for events distribution in a microservice environment. This includes analyzing and
           debugging Kafka integration with the product for an optimized performance.
-          
+
           Handling support requests - Investigating product’s log files produced in the client’s machines in order to analyze,
           reproduce and fix bugs.
-          
+
           Containerization - Working and deploying in Kubernetes for E2E tests, and viewing logs directly or Kibana. Using
           Docker and VM environments for component and stress tests. Also fair experience with AWS.
-          
+
           Presenting demo sessions to relevant audiences for new features implemented by me and teammates.
           Leading integration for various features that require several microservices which are under the responsibility of
           other teams. These tasks require more communication with other teams, rather than concrete implementation.
-          
+
           Development and deployment in Linux CentOS and Windows environments.
           Full teamwork in SAFe routine through each PI, mainly with developers, PMs and architects.
-          Working with auxiliary development services such as Jira, Git, Gitlab and Jenkins
+          Working with auxiliary development services such as Jira, Git, Gitlab and Jenkins.
 
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
+      - job: "Software Developer - Student"
+        company: "Algosec"
+        companyUrl: "https://algosec.com"
+        date: "2017-2020"
         info:
           enable: false
         featuredLink:
-          enable: true
-          url: "https://example.com"
+          enable: false
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          Part-time (60%-80%) software development at Algosec: Working as a FullStack (Mainly on the back-end) developer as part of Algosec Fireflow product team:
+           - Java back-end development, in Spring Boot including development of REST API’s, networking-related services
+           and controllers and unit/system tests (Mockito, JUnit). Also, refactored Perl legacy code to Java.
+           - DB Development & management using PostgreSQL.
+           - Investigating product’s log files produced in client’s machines in order to reproduce and fix bugs.
+           - Fair experience with security devices of several brands such as Cisco, Fortinet, Juniper, CheckPoint and PaloAlto.
+           - Fair frontend experience development in JS, AngularJS and Angular 9.
+           - Full teamwork in Agile routine consisting of a variety of personnel such as QA, developers, UI & UX and PM’s.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
+      - job: "Android Developer"
+        company: "Sociopal"
+        date: "2014-2015"
+        info:
+          enable: false
         featuredLink:
-          enable: true
+          enable: false
           url: "https://example.com"
         content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
+          Client-side Java development in native environment for Android: Working with the elements of Android
+          (LifeCycle, Activities, Intents, etc.), handling REST services and analyzing crash logs produced at user's devices.
+          - Fair experience back-end development in PHP, with basic experience using MongoDB.
+          - Teamwork in a development, staging and production environments with QA, developers, UI & UX and PM’s.
+          - Experience with auxiliary development services and tools such as analytics, crash reporting and SVN.
 
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+      - job: "Taskforce"
+        company: "Military - IDF"
+        info:
+          enable: false
+        date: "2012-2014"
+        content:
+          "Military: Voluntary service at the intelligence force - highly classified operational unit at Givatayim.
+          - Python development – Writing GUI's, scripts and automations.
+          - Data communications – Working with the OSI model, managing networks and equipment configuring."
 
   # Education
   education:
