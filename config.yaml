@@ -273,7 +273,7 @@ params:
     # title: "Custom Name"
     items:
       - title: ParaStrike
-        content: A modern casual version of the retro game Paratrooper. Written in Java for Android, involves integration with Google Play Services to include in-app purchases, leaderboards and cloud saving. 
+        content: A modern casual version of the retro game Paratrooper. Written in Java for Android, involves integration with Google Play Services to include in-app purchases, leader-boards and cloud saving. 
         image: /images/parastrike.png
         featured:
           name: ParaStrike
@@ -286,32 +286,31 @@ params:
           - icon: fab fa-github
             url: https://github.com/GadWissberg/parastrike
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+      - title: Shubutz
+        content: A tiny Hebrew variation of the Hangman game. Designed both for mature and kids. Written in Kotlin for Android, involves integration with Google Play Services to include in-app purchases and leader-boards.
+        image: /images/shubutz.png  
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Kotlin"
+          - "Android"
+          - "libGdx"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/GadWissberg/words-bomb
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+      - title: Terror Effector
+        content: A turn-based game for the desktop. Still in progress and available for download for testing. This is a much more detailed and complex project - All assets (except melodies) were made by me. 
+        image: /images/terror_effector.png
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Java"
+          - "Windows"
+          - "Linux"
+          - "libGdx"
+        featured:
+          name: itch.io
+          link: https://gadarts.itch.io/terror-effector
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/GadWissberg/industrial-game
 
   #Contact
   contact:
