@@ -102,7 +102,7 @@ params:
   navbar:
     align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
-    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "Gad Wissberg" # Brand name for the brand | default is the title variable
     disableSearch: false
     # searchPlaceholder: "Search"
@@ -316,9 +316,9 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-    email: gurusabarisha@gmail.com
-    btnName: Mail me
+    content: Feel free to contact me!
+    email: gadw17@gmail.com
+    btnName: gadw17@gmail.com
     # formspree:
     #   enable: true # `contact.email` value will be ignored
     #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
@@ -333,11 +333,8 @@ params:
       enable: true
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/GadWissberg
+      linkedin: https://www.linkedin.com/in/gad-wissberg-781772150/
 
   # List pages like blogs and posts
   listPages:
