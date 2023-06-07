@@ -25,15 +25,15 @@ markup:
 Menus:
   main:
     - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
+      name: Tutorials
+      title: Tutorials
+      url: /tutorials
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+    # - identifier: gallery
+    #   name: Gallery
+    #   title: Blog posts
+    #   url: /gallery
+    #   weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -329,9 +329,9 @@ params:
 
   footer:
     recentPosts:
-      path: "blogs"
+      path: "tutorials"
       count: 3
-      title: Recent Posts
+      title: Tutorials
       enable: true
       disableFeaturedImage: false
     socialNetworks:
