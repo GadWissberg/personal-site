@@ -1,16 +1,13 @@
 ---
 title: "Introduction and Setup"
-date: 2023-07-23T19:53:33+05:30
+date: 2023-08-12T19:53:33+05:30
 draft: false
-author: "Gurusabarish"
 tags:
-  - Markdown syntax
-  - Mathjax
-  - example
-image: /images/mathjax.png
+  - libGdx
+  - libKTX
+  - Setup
+image: /images/logos.png
 description: ""
-toc: true
-mathjax: true
 ---
 
 ## Introduction and Setup
@@ -21,7 +18,7 @@ After several years of using libGdx in Java, I yearned to expand my programming 
 
 These tutorials do not require prior knowledge of Kotlin, but familiarity with an object-oriented language is recommended. Java is particularly beneficial as Kotlin is a JVM language and draws significant inspiration from it. The tutorials will cover game development elements including graphics programming, logic, and UI, so it is perfectly fine if you have no prior experience in any of these areas.
 
-<h3>Overall Glance</h3>
+## Overall Glance
 In this first tutorial we’ll only set up the working environment and have an overall glance on how libGdx is structured. Straight from libGdx homepage: “libGDX is a cross-platform Java game development framework based on OpenGL (ES) that works on Windows, Linux, macOS, Android, your browser and iOS”. Simple as that. I will be using Android Studio (which is based on intelliJ) and aim for mobile game development - you may find here steps to install Android Studio including the Android SDK. But if you aim for Desktop/iOS/HTML, it’s fine since you write your game logic once and make the adjustments per platform. But it is strongly recommended to use intelliJ/Android Studio.
 
 We’re gonna start off by creating the actual project itself. For this you can use the project generator mentioned in libGdx homepage, but unfortunately, (as of now) it doesn’t generate your project with the correct adjustments to use Kotlin, but only Java. For this I recommend to use tommyettinger’s gfx-liftoff which supplies what we want:
@@ -34,7 +31,7 @@ We’re gonna start off by creating the actual project itself. For this you can 
 The first text box is the name of your project. The second is the name of the root package of the project (Convention is com.<nameofyourcompany>.<projectname>). The third is the name of the main class. The fourth is the location to create the project files and last one is the path to your already installed Android SDK. You may find this path in the SDK Manager inside Android Studio. For we’ll suffice checking the Desktop and Android checkboxes. This will ensure to create 2 additional modules (in addition to the Core module which is mandatory), each one for the mentioned platform.
 Last thing to make sure is in the Languages tab to check the Kotlin checkbox so we’ll have the created project configured to support Kotlin. And that’s it - you may click Generate Project!. The generator will create the project files in the destination folder you gave.
 
-<h3>Enter the IDE</h3>
+## Enter the IDE
 Using Android Studio, open the created folder as a project and give it a minute or two to build up and index. Once finished, your project view will probably look like this:
 
 ![title](2.png)
