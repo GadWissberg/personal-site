@@ -6,7 +6,7 @@ tags:
   - libGdx
   - libKTX
   - HelloWorld
-image: /images/logos.png
+image: /images/libktx_1.png
 description: ""
 ---
 

@@ -6,7 +6,7 @@ tags:
   - libGdx
   - libKTX
   - Setup
-image: /images/logos.png
+image: /images/libktx_0.png
 description: ""
 ---
 
