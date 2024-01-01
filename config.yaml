@@ -150,8 +150,8 @@ params:
       title: "Here are a few technologies I've been working with recently:"
       items:
         - "Languages: Java, Kotlin, Scala, TypeScript, JS, SQL, HTML/CSS, Python"
-        - "DB: PostgreSQL, MongoDB, Oracle, Snowflake"
-        - "Web Development: Node.js, Angular, Kafka, Spring, AWS"
+        - "DB: PostgreSQL, Redis, Snowflake, MongoDB, Oracle"
+        - "Web Development: Node.js, Kafka, AWS, Angular, Spring"
         - "OS: Windows, macOS, Linux"
         - "Game Development: Android, libGdx, openGL, Phaser, Blender, Photoshop, GameMaker"
         - "Other tools & services: Docker, Kubernetes, Terraform, Coralogix, Grafana"
