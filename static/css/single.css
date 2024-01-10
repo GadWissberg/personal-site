@@ -1,3 +1,7 @@
+
+#single .page-content {
+    font-size: 100px;
+}
 #single {
     padding: 60px 0;
     line-height: 1.7em;
@@ -70,6 +74,7 @@
 #single .page-content blockquote, #single .page-content blockquote * {
     background-color: var(--secondary-color) !important;
 }
+
 
 /* table */
 #single .page-content table {

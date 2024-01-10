@@ -1,5 +1,5 @@
 ---
-title: "libGDX - User Input"
+title: "libGDX #3 - User Input"
 date: 2023-12-03
 draft: false
 tags:
@@ -21,7 +21,7 @@ As introduced in the previous tutorial, libGdx provides us with a convenient cla
 Gdx.input.inputProcessor = this
 ```
 
-What we basically do here is pass our main game class as the input processor. Of course, you’ll notice the error “Type mismatch: inferred type is LibKtxHelloWorld but InputProcessor! was expected” - this is because our main class does not implement the InputProcessor interface yet. So let’s do that! We’ll InputProcessor to our main class declaration line:
+What we basically do here is pass our main game class as the input processor. Of course, you’ll notice the error “Type mismatch: inferred type is LibKtxHelloWorld but InputProcessor! was expected” - this is because our main class does not implement the *InputProcessor* interface yet. So let’s do that! We’ll add *InputProcessor* to our main class declaration line:
 ```
 class LibKtxHelloWorld : ApplicationAdapter(), InputProcessor
 ```
@@ -31,11 +31,11 @@ Now we need to make sure our class implements each one of the interface’s meth
 ![title](1.png)
 
 In the methods list dialog make sure all methods are selected and click OK to add them.
-You’ll notice Android Studio has added them in the bottom of the class, each one with TODO("Not yet implemented"). You may replace each one of these TODOs with return false.
+You’ll notice AndroidStudio has added them in the bottom of the class, each one with *TODO("Not yet implemented")*. You may replace each one of these TODOs with return false.
 
-An important note: Generally, when writing code, it is important to keep your code clean. A more elegant solution here would be to create another class GameInputProcessor which will implement by itself the InputProcessor interface and have all the input related code reside in it. In the main class you’d just create an instance of GameInputProcessor and pass it to Gdx.input.inputProcessor. This way we’re applying separation of concerns, encapsulating our input code in a specific place and keeping our main class more focused on other general logic. But in this tutorial we’re having our main class as the input processor just for brevity.
+An important note: Generally, when writing code, it is important to keep your code clean. A more elegant solution here would be to create another class *GameInputProcessor* which will implement by itself the *InputProcessor* interface and have all the input related code reside in it. In the main class you’d just create an instance of *GameInputProcessor* and pass it to *Gdx.input.inputProcessor*. This way we’re applying separation of concerns, encapsulating our input code in a specific place and keeping our main class more focused on other general logic. But in this tutorial we’re having our main class as the input processor just for brevity.
 
-As we said in the beginning of this tutorial, we’ll make our smiley move towards the point we click on the screen. For that, we basically only need the touchDown() method. This method is called each time the screen is touched (or the mouse was clicked on the desktop platform). So we’ll store the click position and have our smiley move towards it on every rendered frame in our game. Before we begin writing our logic, we’ll need to store the clicked position in an additional vector - so let’s add another one:
+As we said in the beginning of this tutorial, we’ll make our smiley move towards the point we click on the screen. For that, we basically only need the *touchDown()* method. This method is called each time the screen is touched (or the mouse was clicked on the desktop platform). So we’ll store the click position and have our smiley move towards it on every rendered frame in our game. Before we begin writing our logic, we’ll need to store the clicked position in an additional vector - so let’s add another one:
 ```
 private val destination: Vector2 = Vector2()
 ```
@@ -50,7 +50,7 @@ For our case, we only need the coordinates, so let’s store them in our new vec
 destination.set(screenX.toFloat(), Gdx.graphics.height - screenY.toFloat())
 return true
 ```
-Note I used the game’s screen height and subtracted the Y coordinate - meaning I mirrored the Y coordinate. This is because the Y coordinate we receive in this method is calculated given that the origin is on the upper left corner. But the Y coordinate we pass to the batch.draw() is expected to be given where the origin is on the bottom left corner.
+Note I used the game’s screen height and subtracted the Y coordinate - meaning I mirrored the Y coordinate. This is because the Y coordinate we receive in this method is calculated given that the origin is on the upper left corner. But the Y coordinate we pass to the *batch.draw()* is expected to be given where the origin is on the bottom left corner.
 
 We set our vector with the new values (notice we’re provided with integers while the vector supports only float - thus the cast). In addition to that I changed the return value to true. Our code will work fine if this was returning false as well. This is a bit out of scope but basically what we do is return whether we want libGdx input handling to keep handling that specific input in additional input processors we have (which currently we have only one input processor so it’s not relevant). But we should stick to best practice and we consider that input as handled in this code so we return true.
 
@@ -75,7 +75,7 @@ So let’s write! Of course, the Vector2 class already has an implementation for
 Vector2.sub(Vector2 v):
 velocity.set(destination).sub(position).nor()
 ```
-This line will replace our movement logic inside the render() method we used for the previous tutorial. Our render() should look like this now:
+This line will replace our movement logic inside the *render()* method we used for the previous tutorial. Our *render()* should look like this now:
 ```
 override fun render() {
    position.add(velocity)
@@ -93,10 +93,10 @@ override fun render() {
    batch!!.end()
 }
 ```
-Note we also used an additional method nor(). This normalizes the resulting vector. I don’t want to dive too much into Algebra in this tutorial, but what it involves  is scaling it to have a length of 1 while preserving its original direction. In other words, you make the vector a unit vector. To normalize a vector, you divide each of its components by its magnitude (length) to ensure it points in the same direction but has a length of 1. This is useful to avoid our velocity to apply really big speed movement to the smiley in cases where the two positions are very far away. If you feel a bit lost in it, don’t worry, it’s not that necessary to fully understand it now.
+Note we also used an additional method *nor()*. This normalizes the resulting vector. I don’t want to dive too much into Algebra in this tutorial, but what it involves  is scaling it to have a length of 1 while preserving its original direction. In other words, you make the vector a unit vector. To normalize a vector, you divide each of its components by its magnitude (length) to ensure it points in the same direction but has a length of 1. This is useful to avoid our velocity to apply really big speed movement to the smiley in cases where the two positions are very far away. If you feel a bit lost in it, don’t worry, it’s not that necessary to fully understand it now.
 
 You may now run the game, click on certain places in the screen and behold the smiley moving slowly towards the clicked position!
-You’ll probably notice that the smiley moves in a way its left-bottom point reaches the destination position. It would have been more intuitive where the smiley will actually arrive at the destination with its center position. Well, that’s because the texture is drawn at its position with the origin point of (0,0) of the texture. This means, we need to draw the smiley on its position with an horizontal and vertical offset. We want it centered so basically we need to draw with an horizontal offset in size of half smiley’s width. Same thing for vertical offset with the smiley’s height. To do that, we’ll modify a bit our drawing line:
+You’ll probably notice that the smiley moves in a way its left-bottom point reaches the destination position. It would have been more intuitive where the smiley will actually arrive at the destination with its center position. Well, that’s because the texture is drawn at its position with the origin point of *(0,0)* of the texture. This means, we need to draw the smiley on its position with an horizontal and vertical offset. We want it centered so basically we need to draw with an horizontal offset in size of half smiley’s width. Same thing for vertical offset with the smiley’s height. To do that, we’ll modify a bit our drawing line:
 ```
 batch!!.draw(image, position.x - image!!.width / 2F, position.y - image!!.height / 2F)
 ```
@@ -105,7 +105,7 @@ As you can see, we draw the smiley on his current position, move to the left sid
 ![title](3.png)
 
 ## Processing more input
-Let’s improve it a little bit more - it’ll move as long the mouse clicks. That means, when the mouse button is released, the smiley will stop. Currently we only implement the touchDown(). We are going to implement touchUp(). As its name implies - it is called when the button is released. So, when it is released, we want the smiley to stop, which is basically no velocity:
+Let’s improve it a little bit more - it’ll move as long the mouse clicks. That means, when the mouse button is released, the smiley will stop. Currently we only implement the *touchDown()*. We are going to implement *touchUp()*. As its name implies - it is called when the button is released. So, when it is released, we want the smiley to stop, which is basically no velocity:
 ```
 override fun touchUp(screenX: Int, screenY: Int, pointer: Int, button: Int): Boolean {
   destination.set(position)
@@ -118,7 +118,7 @@ private val destination: Vector2 = Vector2(position)
 ```
 This will make sure the smiley won’t start moving on its own when we start the game.
 
-Another way to implement it will be to actually remove the line from render() where we calculate the velocity and add it into the touchDown():
+Another way to implement it will be to actually remove the line from *render()* where we calculate the velocity and add it into the *touchDown()*:
 ```
 override fun touchDown(screenX: Int, screenY: Int, pointer: Int, button: Int): Boolean {
    destination.set(screenX.toFloat(), Gdx.graphics.height - screenY.toFloat())
@@ -128,14 +128,14 @@ override fun touchDown(screenX: Int, screenY: Int, pointer: Int, button: Int): B
    return true
 }
 ```
-Then, change the touchUp() to zero the velocity:
+Then, change the *touchUp()* to zero the velocity:
 ```
 override fun touchUp(screenX: Int, screenY: Int, pointer: Int, button: Int): Boolean {
    velocity.setZero()
    return true
 }
 ```
-You basically got the same result but this approach is more correct since we let our velocity vector actually affect the movement direction and speed. Once the velocity is zero, we don’t move. Before you run it, make sure to zero the velocity vector when we create it (as it was originally (1,0)):
+You basically got the same result but this approach is more correct since we let our velocity vector actually affect the movement direction and speed. Once the velocity is zero, we don’t move. Before you run it, make sure to zero the velocity vector when we create it (as it was originally *(1,0)*):
 ```
 private val velocity: Vector2 = Vector2()
 ```
