@@ -5,7 +5,7 @@ draft: false
 tags:
   - libGdx
   - libKTX
-  - HelloWorld
+  - Input
 image: /images/libktx_2.png
 description: ""
 ---

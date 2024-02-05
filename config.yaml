@@ -118,7 +118,7 @@ params:
   hero:
     enable: true
     intro: "Hello! I am"
-    title: "Gad Wissberg."
+    title: "Gad Wissberg"
     subtitle: "I'm a software developer"
     content: "I am deeply passionate about the programming and design fields, which have captivated me since I first started coding. Here you'll find tutorials on game development and additional information about me."
     image: /images/hero.svg
@@ -128,7 +128,7 @@ params:
     button:
       enable: true
       name: "CV"
-      url: "#"
+      url: "/GadWissberg-CV.pdf"
       download: true
       newPage: false
     socialLinks:
@@ -137,6 +137,16 @@ params:
           url: https://github.com/GadWissberg
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/gad-wissberg-781772150/
+
+  recentPosts:
+      path: "tutorials"
+      count: 3
+      title: Recent Tutorials
+      enable: true
+      disableFeaturedImage: false
+      socialNetworks:
+        github: https://github.com/GadWissberg
+        linkedin: https://www.linkedin.com/in/gad-wissberg-781772150/
 
   # About
   about:
@@ -278,7 +288,7 @@ params:
         content: A modern casual version of the retro game Paratrooper. Written in Java for Android, involves integration with Google Play Services to include in-app purchases, leader-boards and cloud saving.
         image: /images/parastrike.png
         featured:
-          name: ParaStrike
+          name: Google Play
           link: https://play.google.com/store/apps/details?id=com.gadarts.parashoot.android
         badges:
           - "Java"
@@ -291,6 +301,9 @@ params:
       - title: Shubutz
         content: A tiny Hebrew variation of the Hangman game. Designed both for mature and kids. Written in Kotlin for Android, involves integration with Google Play Services to include in-app purchases and leader-boards.
         image: /images/shubutz.png
+        featured:
+          name: Google Play
+          link: https://play.google.com/store/apps/details?id=com.gadarts.shubutz&hl=en&gl=US
         badges:
           - "Kotlin"
           - "Android"
@@ -331,7 +344,7 @@ params:
     recentPosts:
       path: "tutorials"
       count: 3
-      title: Tutorials
+      title: Recent Tutorials
       enable: true
       disableFeaturedImage: false
     socialNetworks:

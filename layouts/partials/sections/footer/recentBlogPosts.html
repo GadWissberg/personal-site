@@ -1,6 +1,6 @@
 <div class="container py-3" id="recent-posts">
     {{ if .Site.Params.footer.recentPosts.enable | default false }}
-    {{ $recentPostsPath := .Site.Params.footer.recentPosts.path | default "Tutorials" }}
+    {{ $recentPostsPath := .Site.Params.footer.recentPosts.path | default "Recent Tutorials" }}
     {{ $recentPostsCount := .Site.Params.footer.recentPosts.count | default 3 }}
     {{ $recentPosts := where .Site.RegularPages "Section" $recentPostsPath | first $recentPostsCount }}
     <div class="h3 text-center text-secondary py-3">
@@ -10,7 +10,8 @@
         {{ range $recentPosts }}
         <div class="col-lg-4 col-md-6 pt-2">
             <div class="card h-100">
-                {{ if and (not (.Site.Params.footer.recentPosts.disableFeaturedImage | default false)) (.Params.image) }}
+                {{ if and (not (.Site.Params.footer.recentPosts.disableFeaturedImage | default false)) (.Params.image)
+                }}
                 <div class="card-header">
                     <a href="{{ .RelPermalink }}">
                         <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">
