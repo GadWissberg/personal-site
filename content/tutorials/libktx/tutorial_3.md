@@ -146,3 +146,5 @@ As mentioned earlier, on the desktop these touch inputs are received from the mo
 ## To conclude
 - We learned about Input Processors in libGdx.
 - Implemented our own reaction to certain inputs.
+
+This tutorial's [source code](https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input)
