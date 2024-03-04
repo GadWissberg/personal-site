@@ -57,3 +57,6 @@ To conclude
 - We discussed briefly the libGdx’s structure - composed of the core module which holds the game logic and the platform modules for launching the game.
 - We created our first libKTX project - Kotlin project integrated with libGdx.
 - We launched our project on the Desktop and Android.
+
+This tutorial's source code:
+https://github.com/GadWissberg/Tutorials_libGDX_1_Introduction
