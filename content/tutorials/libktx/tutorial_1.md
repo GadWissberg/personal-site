@@ -58,5 +58,4 @@ To conclude
 - We created our first libKTX project - Kotlin project integrated with libGdx.
 - We launched our project on the Desktop and Android.
 
-This tutorial's source code:
-https://github.com/GadWissberg/Tutorials_libGDX_1_Introduction
+This tutorial's [source code](https://github.com/GadWissberg/Tutorials_libGDX_1_Introduction)
