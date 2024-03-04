@@ -53,7 +53,7 @@ For Android, you may run it on your physical Android device or an emulator. To l
 
 Note: If you’ve never developed an app, you first need to enable developer mode inside your device and enable “USB debugging”. [The following article explains it](https://www.digitaltrends.com/mobile/how-to-get-developer-options-on-android/). This step is already done in the emulator.
 
-To conclude
+### To conclude
 - We discussed briefly the libGdx’s structure - composed of the core module which holds the game logic and the platform modules for launching the game.
 - We created our first libKTX project - Kotlin project integrated with libGdx.
 - We launched our project on the Desktop and Android.
