@@ -8,6 +8,9 @@ tags:
   - Setup
 image: /images/libktx_0.png
 description: ""
+comments:
+  url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_1/
+  identifier: tutorial_libgdx_0
 ---
 
 ## Introduction and Setup

@@ -8,6 +8,9 @@ tags:
   - HelloWorld
 image: /images/libktx_1.png
 description: ""
+comments:
+  url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_2/
+  identifier: tutorial_libgdx_1
 ---
 
 ## Hello World!

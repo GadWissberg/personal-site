@@ -34,20 +34,40 @@
           </div>
           {{ end }}
           <article class="page-content  p-2">
-          {{ .Content | emojify }}
+            {{ .Content | emojify }}
           </article>
         </div>
+        <div id="disqus_thread"></div>
+        <script>
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+          /*
+          */
+          var disqus_config = function () {
+            this.page.url = "{{ .Params.comments.url }}";
+            this.page.identifier = "{{.Params.comments.identifier}}";
+          };
+          (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://https-gad-wissberg-netlify-app.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+          })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-3">
         <div class="sticky-sidebar">
           {{ if .Params.toc | default true}}
           <aside class="toc">
-              <h5>
-                {{ .Site.Params.terms.toc | default "Table Of Contents" }}
-              </h5>
-              <div class="toc-content">
-                {{.TableOfContents}}
-              </div>
+            <h5>
+              {{ .Site.Params.terms.toc | default "Table Of Contents" }}
+            </h5>
+            <div class="toc-content">
+              {{.TableOfContents}}
+            </div>
           </aside>
           {{ end }}
 
@@ -68,17 +88,20 @@
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://twitter.com/share?text={{ .Title }}&url={{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
+                  <a target="_blank"
+                    href="https://twitter.com/share?text={{ .Title }}&url={{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text={{ .Title }}: {{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
+                  <a target="_blank"
+                    href="https://api.whatsapp.com/send?text={{ .Title }}: {{ .Site.Params.hostName }}{{ .Permalink | absURL }}">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject={{ .Title }}&amp;body={{ .Site.Params.terms.emailText | default "Check out this site" }} {{ .Site.Params.hostName }}{{ .Permalink | absURL }}'>
+                  <a target="_blank"
+                    href='mailto:?subject={{ .Title }}&amp;body={{ .Site.Params.terms.emailText | default "Check out this site" }} {{ .Site.Params.hostName }}{{ .Permalink | absURL }}'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
@@ -102,14 +125,15 @@
 
 {{ if or (.Site.Params.singlePages.scrollprogress.enable | default true) (.Params.enableScrollProgress) }}
 <div class="progress">
-  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+    aria-valuemax="100"></div>
 </div>
 <Script src="{{.Site.Params.staticPath}}/js/scrollProgressBar.js"></script>
 {{ end }}
 
 <script>
   var topScroll = document.getElementById("topScroll");
-  window.onscroll = function() {scrollFunction()};
+  window.onscroll = function () { scrollFunction() };
 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

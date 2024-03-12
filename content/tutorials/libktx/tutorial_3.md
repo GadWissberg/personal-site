@@ -8,6 +8,9 @@ tags:
   - Input
 image: /images/libktx_2.png
 description: ""
+comments:
+  url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_3/
+  identifier: tutorial_libgdx_2
 ---
 
 ## Reacting to the user’s input
