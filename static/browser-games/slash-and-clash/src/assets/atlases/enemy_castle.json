@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "enemy_castle.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 588,
+				"h": 205
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "castle_0",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 145,
+						"h": 203
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 145,
+						"h": 203
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 145,
+						"h": 203
+					}
+				},
+				{
+					"filename": "castle_1",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 145,
+						"h": 203
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 145,
+						"h": 203
+					},
+					"frame": {
+						"x": 148,
+						"y": 1,
+						"w": 145,
+						"h": 203
+					}
+				},
+				{
+					"filename": "castle_2",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 145,
+						"h": 203
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 145,
+						"h": 203
+					},
+					"frame": {
+						"x": 295,
+						"y": 1,
+						"w": 145,
+						"h": 203
+					}
+				},
+				{
+					"filename": "castle_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 145,
+						"h": 203
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 145,
+						"h": 203
+					},
+					"frame": {
+						"x": 442,
+						"y": 1,
+						"w": 145,
+						"h": 203
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:db21c9fc4b569cfbc2872b9ea40c3a58:f82fb339aeb1ff3860d29287e6f68f08:b6dc9d0d74f3ed2329344b12ea2a7ef4$"
+	}
+}
