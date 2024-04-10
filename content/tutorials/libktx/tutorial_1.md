@@ -8,6 +8,7 @@ tags:
   - Setup
 image: /images/libktx_0.png
 description: ""
+sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_1_Introduction
 comments:
   url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_1/
   identifier: tutorial_libgdx_0
@@ -60,5 +61,3 @@ Note: If you’ve never developed an app, you first need to enable developer mod
 - We discussed briefly the libGdx’s structure - composed of the core module which holds the game logic and the platform modules for launching the game.
 - We created our first libKTX project - Kotlin project integrated with libGdx.
 - We launched our project on the Desktop and Android.
-
-This tutorial's [source code](https://github.com/GadWissberg/Tutorials_libGDX_1_Introduction)

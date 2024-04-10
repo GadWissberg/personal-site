@@ -8,6 +8,7 @@ tags:
   - HelloWorld
 image: /images/libktx_1.png
 description: ""
+sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_2_Hello_World
 comments:
   url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_2/
   identifier: tutorial_libgdx_1
@@ -171,5 +172,3 @@ There’s nothing special platform-wise, so you basically see the same thing on 
 - We learned the framework’s lifecycle and how to use it to our needs.
 - Added our own asset - an image.
 - Applied movement on our image using vectors with a very basic collision check with the game’s screen edges.
-
-This tutorial's [source code](https://github.com/GadWissberg/Tutorials_libGDX_2_Hello_World)

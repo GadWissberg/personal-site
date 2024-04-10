@@ -8,6 +8,7 @@ tags:
   - Input
 image: /images/libktx_2.png
 description: ""
+sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input
 comments:
   url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_3/
   identifier: tutorial_libgdx_2
@@ -149,5 +150,3 @@ As mentioned earlier, on the desktop these touch inputs are received from the mo
 ## To conclude
 - We learned about Input Processors in libGdx.
 - Implemented our own reaction to certain inputs.
-
-This tutorial's [source code](https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input)
