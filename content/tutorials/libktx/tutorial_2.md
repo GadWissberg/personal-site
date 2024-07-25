@@ -30,7 +30,7 @@ There are 3 more which we currently don’t override:
 **pause()** - Called when the game’s process loses focus (e.g. on Android when we switch to another app).
 **resume()** - Called when the game is focused again.
 
-Below you can see a clear graph (from the libGdx website: https://libgdx.com/wiki/app/the-life-cycle) displaying the possible transitions between the states:
+Below you can see a clear graph (from the libGdx website: [https://libgdx.com/wiki/app/the-life-cycle](https://libgdx.com/wiki/app/the-life-cycle)) displaying the possible transitions between the states:
 
 ![title](1.png)
 

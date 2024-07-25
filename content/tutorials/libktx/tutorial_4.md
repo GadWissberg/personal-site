@@ -16,12 +16,12 @@ comments:
 
 ## Managing our world using Scene2D
 
-After we gave a basic interactivity to our game with a single entity, you can see it can be expanded into unlimited ways. But if you think of it, when the game will have dozens or even hundreds of different entities where each one reacts differently to the environment and the player’s input, the code will quickly get messy and hard to maintain. Before we continue developing new features and ideas, it’s a good idea to stop and comprehend the need of managing the entities in our game’s world in a more organized and productive way. Sure, you can start adding arrays, lists, and other data structures to organize everything. But we aim in these tutorials to be exposed to as many available tools and libs which can provide us solutions to problems that probably others encountered before. For our needs, we’re gonna use _Scene2D_. _Scene2D_ is a module in libGdx serving as a scene-graph. A scene-graph is basically a graph data-structure (usually structured as a tree) which represents the logical and graphical representation of a graphic application. You may find more explanation regarding the definition of it in the excellent tutor learnopengl.com[https://learnopengl.com/Guest-Articles/2021/Scene/Scene-Graph].
+After we gave a basic interactivity to our game with a single entity, you can see it can be expanded into unlimited ways. But if you think of it, when the game will have dozens or even hundreds of different entities where each one reacts differently to the environment and the player’s input, the code will quickly get messy and hard to maintain. Before we continue developing new features and ideas, it’s a good idea to stop and comprehend the need of managing the entities in our game’s world in a more organized and productive way. Sure, you can start adding arrays, lists, and other data structures to organize everything. But we aim in these tutorials to be exposed to as many available tools and libs which can provide us solutions to problems that probably others encountered before. For our needs, we’re gonna use _Scene2D_. _Scene2D_ is a module in libGdx serving as a scene-graph. A scene-graph is basically a graph data-structure (usually structured as a tree) which represents the logical and graphical representation of a graphic application. You may find more explanation regarding the definition of it in the excellent tutor [learnopengl.com](https://learnopengl.com/Guest-Articles/2021/Scene/Scene-Graph).
 When using a scene-graph we can manage our game’s entities in an hierarchical manner. This means that not only can we manage the game's elements such as characters, obstacles etc, but also actually manage the UI elements too. Some use _Scene2D_ for the game-play elements only, some use it for UI only and some for both. Remember, libGdx is a framework and not an engine - hence you’re not restricted to the way you implement your game’s development and structure. In this tutorial we’ll create a very simple game in which smileys will pop up randomly on the screen, and the player’s target is to click them.
 
 ## Stop making a scene, it’s simple!
 
-We’re gonna continue from the codebase of tutorial 3[https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input] although we’ll remove all of the LibktxHelloWorld class fields, remove the usage of InputProcessor and its overridden methods and clean the lifecycle methods too. Basically, our starting point is supposed to look like that:
+We’re gonna continue from the codebase of [tutorial 3](https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input) although we’ll remove all of the LibktxHelloWorld class fields, remove the usage of InputProcessor and its overridden methods and clean the lifecycle methods too. Basically, our starting point is supposed to look like that:
 
 ```
 class LibktxHelloWorld : ApplicationAdapter() {
@@ -42,7 +42,7 @@ class LibktxHelloWorld : ApplicationAdapter() {
 }
 ```
 
-Before we begin coding, you should know that libKTX also contains modular utilities and extensions for various parts of libGDX (Visit libKTX Github page for detailed information https://github.com/libktx/). So although we can continue this tutorial using libGdx standard Java API, I think it is more appropriate and preferred to use the available utilities since we write in Kotlin. So for that we’ll add two additional imports. First, let’s add a new version value to our _gradle.properties_ file:
+Before we begin coding, you should know that libKTX also contains modular utilities and extensions for various parts of libGDX (Visit libKTX Github page for detailed information [https://github.com/libktx/](https://github.com/libktx/). So although we can continue this tutorial using libGdx standard Java API, I think it is more appropriate and preferred to use the available utilities since we write in Kotlin. So for that we’ll add two additional imports. First, let’s add a new version value to our _gradle.properties_ file:
 
 ```
 ktxVersion=1.12.1-rc1
@@ -56,8 +56,8 @@ implementation "io.github.libktx:ktx-scene2d:$ktxVersion"
 ```
 
 The first one is a module of extensions for Scene2D GUI elements and the second one is a module of type-safe Kotlin builders for Scene2D GUI. You may find additional info on each one accordingly:
-https://github.com/libktx/ktx/tree/master/actors
-https://github.com/libktx/ktx/tree/master/scene2d
+[https://github.com/libktx/ktx/tree/master/actors](https://github.com/libktx/ktx/tree/master/actors)
+[https://github.com/libktx/ktx/tree/master/scene2d](https://github.com/libktx/ktx/tree/master/scene2d)
 
 We’ll begin straight-forward with the subject: The stage. Let’s create a new instance of _Stage_:
 
@@ -271,7 +271,7 @@ private fun putSmileyInRandomPosition(it: Actor) {
 }
 ```
 
-Easy! We extracted the actor creation piece of code into an extension method of _StageWidget_ (A widget class in the ktx.scene2d module used for adding actors directly to the stage) and called it 3 times! (Kotlin’s official documentation for extension classes - https://kotlinlang.org/docs/extensions.html). We also add the _@Scene2dDsl_ annotation to indicate that this function is part of the custom DSL for Scene2d. It’s just for good practice although it’ll also work without it. Each call creates a new actor and inserts it into our stage:
+Easy! We extracted the actor creation piece of code into an extension method of _StageWidget_ (A widget class in the ktx.scene2d module used for adding actors directly to the stage) and called it 3 times! (Kotlin’s official documentation for extension classes - [https://kotlinlang.org/docs/extensions.html](https://kotlinlang.org/docs/extensions.html)). We also add the _@Scene2dDsl_ annotation to indicate that this function is part of the custom DSL for Scene2d. It’s just for good practice although it’ll also work without it. Each call creates a new actor and inserts it into our stage:
 
 ![title](2.png)
 
