@@ -56,6 +56,7 @@ implementation "io.github.libktx:ktx-scene2d:$ktxVersion"
 ```
 
 The first one is a module of extensions for Scene2D GUI elements and the second one is a module of type-safe Kotlin builders for Scene2D GUI. You may find additional info on each one accordingly:
+
 [https://github.com/libktx/ktx/tree/master/actors](https://github.com/libktx/ktx/tree/master/actors)
 [https://github.com/libktx/ktx/tree/master/scene2d](https://github.com/libktx/ktx/tree/master/scene2d)
 
