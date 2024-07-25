@@ -170,8 +170,22 @@ Now each time we’ll start the game, the smiley will appear in a random positio
 Our next step is to make the smiley pop in random positions. To apply such logic, let me introduce you to a very useful mechanism in the Stage class: _Actions_. An action in the Stage scene graph is basically a runnable that runs and gets triggered with a predefined logic, and is handled by the scene graph. There are many ready-made actions in the _Actions_ class, and you can also define your own. For our usage, let’s break down the smiley’s logic into actions:
 
 - Apply infinitely the following action:
-  - Apply the following actions sequentially: - Apply the following action with a delay of 1 second: - Scale down the smiley to a size of complete 0 in duration of 2 seconds. - Position the smiley in a new random place. - Apply the following action with a delay of 1 second - Scale up the smiley to the original size in duration of 2 seconds. - Wait for 4 seconds.
-    Each line is an action! Let’s see this interpreted into code:
+
+  - Apply the following actions sequentially:
+
+    - Apply the following action with a delay of 1 second:
+
+      - Scale down the smiley to a size of complete 0 in duration of 2 seconds.
+
+      - Position the smiley in a new random place.
+
+      - Apply the following action with a delay of 1 second
+
+        - Scale up the smiley to the original size in duration of 2 seconds.
+
+      - Wait for 4 seconds.
+
+Each line is an action! Let’s see this interpreted into code:
 
 ```
 it.addAction(
