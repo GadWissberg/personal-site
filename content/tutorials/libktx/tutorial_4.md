@@ -11,7 +11,7 @@ description: ""
 sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input
 comments:
   url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_4/
-  identifier: tutorial_libgdx_3
+  identifier: tutorial_libgdx_4
 ---
 
 ## Managing our world using Scene2D
