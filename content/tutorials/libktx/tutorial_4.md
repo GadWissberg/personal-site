@@ -8,7 +8,7 @@ tags:
   - Scene2D
 image: /images/libktx_3.png
 description: ""
-sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input
+sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_4_scene2d
 comments:
   url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_4/
   identifier: tutorial_libgdx_4
@@ -179,7 +179,7 @@ Our next step is to make the smiley pop in random positions. To apply such logic
 
       - Position the smiley in a new random place.
 
-      - Apply the following action with a delay of 1 second
+      - Apply the following action with a delay of 1 second:
 
         - Scale up the smiley to the original size in duration of 2 seconds.
 
