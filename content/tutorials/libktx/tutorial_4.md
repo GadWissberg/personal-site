@@ -10,7 +10,7 @@ image: /images/libktx_3.png
 description: ""
 sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_3_User_Input
 comments:
-  url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_3/
+  url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_4/
   identifier: tutorial_libgdx_3
 ---
 

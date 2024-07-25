@@ -10,7 +10,7 @@ image: /images/libktx_2.png
 description: ""
 sourceCode: https://github.com/GadWissberg/Tutorials_libGDX_4_scene2d
 comments:
-  url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_4/
+  url: https://gad-wissberg.netlify.app/tutorials/libktx/tutorial_3/
   identifier: tutorial_libgdx_3
 ---
 
