@@ -4,51 +4,93 @@
 			"image": "characters.png",
 			"format": "RGBA8888",
 			"size": {
-				"w": 122,
-				"h": 122
+				"w": 176,
+				"h": 176
 			},
 			"scale": 1,
 			"frames": [
 				{
-					"filename": "tree_peasant_2",
+					"filename": "horseman_1",
 					"rotated": false,
-					"trimmed": true,
+					"trimmed": false,
 					"sourceSize": {
-						"w": 25,
-						"h": 28
+						"w": 50,
+						"h": 50
 					},
 					"spriteSourceSize": {
-						"x": 1,
-						"y": 2,
-						"w": 23,
-						"h": 26
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 50
 					},
 					"frame": {
 						"x": 1,
 						"y": 1,
-						"w": 23,
-						"h": 26
+						"w": 50,
+						"h": 50
 					}
 				},
 				{
-					"filename": "peasant_0",
+					"filename": "horseman_3",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 50,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 50,
+						"h": 50
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 50,
+						"h": 50
+					}
+				},
+				{
+					"filename": "horseman_0",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 25,
-						"h": 28
+						"w": 50,
+						"h": 50
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 1,
-						"w": 25,
-						"h": 27
+						"w": 50,
+						"h": 49
 					},
 					"frame": {
-						"x": 26,
+						"x": 53,
 						"y": 1,
-						"w": 25,
-						"h": 27
+						"w": 50,
+						"h": 49
+					}
+				},
+				{
+					"filename": "horseman_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 50
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 50,
+						"h": 49
+					},
+					"frame": {
+						"x": 105,
+						"y": 1,
+						"w": 50,
+						"h": 49
 					}
 				},
 				{
@@ -66,119 +108,35 @@
 						"h": 27
 					},
 					"frame": {
-						"x": 53,
+						"x": 157,
 						"y": 1,
 						"w": 18,
 						"h": 27
 					}
 				},
 				{
-					"filename": "tree_peasant_0",
+					"filename": "arrow_0",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
-						"w": 25,
-						"h": 28
+						"w": 8,
+						"h": 8
 					},
 					"spriteSourceSize": {
 						"x": 0,
 						"y": 1,
-						"w": 25,
-						"h": 27
+						"w": 8,
+						"h": 7
 					},
 					"frame": {
-						"x": 73,
-						"y": 1,
-						"w": 25,
-						"h": 27
-					}
-				},
-				{
-					"filename": "peasant_1",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 25,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 23,
-						"h": 28
-					},
-					"frame": {
-						"x": 1,
-						"y": 29,
-						"w": 23,
-						"h": 28
-					}
-				},
-				{
-					"filename": "peasant_3",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 25,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 23,
-						"h": 28
-					},
-					"frame": {
-						"x": 26,
+						"x": 157,
 						"y": 30,
-						"w": 23,
-						"h": 28
+						"w": 8,
+						"h": 7
 					}
 				},
 				{
-					"filename": "tree_peasant_1",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 25,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 23,
-						"h": 28
-					},
-					"frame": {
-						"x": 51,
-						"y": 30,
-						"w": 23,
-						"h": 28
-					}
-				},
-				{
-					"filename": "tree_peasant_3",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 25,
-						"h": 28
-					},
-					"spriteSourceSize": {
-						"x": 1,
-						"y": 0,
-						"w": 23,
-						"h": 28
-					},
-					"frame": {
-						"x": 76,
-						"y": 30,
-						"w": 23,
-						"h": 28
-					}
-				},
-				{
-					"filename": "knight_0",
+					"filename": "knight_3",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -187,78 +145,15 @@
 					},
 					"spriteSourceSize": {
 						"x": 0,
-						"y": 1,
-						"w": 32,
-						"h": 29
-					},
-					"frame": {
-						"x": 1,
-						"y": 60,
-						"w": 32,
-						"h": 29
-					}
-				},
-				{
-					"filename": "knight_2",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 38,
+						"y": 0,
+						"w": 37,
 						"h": 30
 					},
-					"spriteSourceSize": {
-						"x": 6,
-						"y": 1,
-						"w": 26,
-						"h": 29
-					},
 					"frame": {
-						"x": 35,
-						"y": 60,
-						"w": 26,
-						"h": 29
-					}
-				},
-				{
-					"filename": "swordsman_0",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 33,
+						"x": 53,
+						"y": 52,
+						"w": 37,
 						"h": 30
-					},
-					"spriteSourceSize": {
-						"x": 0,
-						"y": 1,
-						"w": 26,
-						"h": 29
-					},
-					"frame": {
-						"x": 63,
-						"y": 60,
-						"w": 26,
-						"h": 29
-					}
-				},
-				{
-					"filename": "swordsman_2",
-					"rotated": false,
-					"trimmed": true,
-					"sourceSize": {
-						"w": 33,
-						"h": 30
-					},
-					"spriteSourceSize": {
-						"x": 2,
-						"y": 1,
-						"w": 24,
-						"h": 29
-					},
-					"frame": {
-						"x": 91,
-						"y": 60,
-						"w": 24,
-						"h": 29
 					}
 				},
 				{
@@ -277,13 +172,13 @@
 					},
 					"frame": {
 						"x": 1,
-						"y": 91,
+						"y": 53,
 						"w": 34,
 						"h": 30
 					}
 				},
 				{
-					"filename": "knight_3",
+					"filename": "knight_0",
 					"rotated": false,
 					"trimmed": true,
 					"sourceSize": {
@@ -292,14 +187,35 @@
 					},
 					"spriteSourceSize": {
 						"x": 0,
+						"y": 1,
+						"w": 32,
+						"h": 29
+					},
+					"frame": {
+						"x": 92,
+						"y": 52,
+						"w": 32,
+						"h": 29
+					}
+				},
+				{
+					"filename": "archer_shoot_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
 						"y": 0,
-						"w": 37,
+						"w": 27,
 						"h": 30
 					},
 					"frame": {
-						"x": 37,
-						"y": 91,
-						"w": 37,
+						"x": 126,
+						"y": 52,
+						"w": 27,
 						"h": 30
 					}
 				},
@@ -318,8 +234,8 @@
 						"h": 30
 					},
 					"frame": {
-						"x": 76,
-						"y": 91,
+						"x": 92,
+						"y": 83,
 						"w": 27,
 						"h": 30
 					}
@@ -339,10 +255,388 @@
 						"h": 30
 					},
 					"frame": {
-						"x": 76,
-						"y": 91,
+						"x": 92,
+						"y": 83,
 						"w": 27,
 						"h": 30
+					}
+				},
+				{
+					"filename": "archer_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 37,
+						"y": 84,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "swordsman_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 33,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 1,
+						"w": 24,
+						"h": 29
+					},
+					"frame": {
+						"x": 66,
+						"y": 84,
+						"w": 24,
+						"h": 29
+					}
+				},
+				{
+					"filename": "archer_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 27,
+						"h": 29
+					},
+					"frame": {
+						"x": 1,
+						"y": 85,
+						"w": 27,
+						"h": 29
+					}
+				},
+				{
+					"filename": "archer_shoot_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 26,
+						"h": 30
+					},
+					"frame": {
+						"x": 121,
+						"y": 84,
+						"w": 26,
+						"h": 30
+					}
+				},
+				{
+					"filename": "archer_shoot_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 26,
+						"h": 30
+					},
+					"frame": {
+						"x": 149,
+						"y": 84,
+						"w": 26,
+						"h": 30
+					}
+				},
+				{
+					"filename": "archer_shoot_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 26,
+						"h": 30
+					},
+					"frame": {
+						"x": 1,
+						"y": 116,
+						"w": 26,
+						"h": 30
+					}
+				},
+				{
+					"filename": "peasant_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 25,
+						"h": 27
+					},
+					"frame": {
+						"x": 1,
+						"y": 148,
+						"w": 25,
+						"h": 27
+					}
+				},
+				{
+					"filename": "tree_peasant_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 25,
+						"h": 27
+					},
+					"frame": {
+						"x": 28,
+						"y": 148,
+						"w": 25,
+						"h": 27
+					}
+				},
+				{
+					"filename": "archer_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 25,
+						"h": 30
+					},
+					"frame": {
+						"x": 29,
+						"y": 116,
+						"w": 25,
+						"h": 30
+					}
+				},
+				{
+					"filename": "archer_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 25,
+						"h": 30
+					},
+					"frame": {
+						"x": 29,
+						"y": 116,
+						"w": 25,
+						"h": 30
+					}
+				},
+				{
+					"filename": "tree_peasant_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 2,
+						"w": 23,
+						"h": 26
+					},
+					"frame": {
+						"x": 55,
+						"y": 148,
+						"w": 23,
+						"h": 26
+					}
+				},
+				{
+					"filename": "archer_shoot_4",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 28,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 1,
+						"w": 26,
+						"h": 29
+					},
+					"frame": {
+						"x": 56,
+						"y": 116,
+						"w": 26,
+						"h": 29
+					}
+				},
+				{
+					"filename": "peasant_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 23,
+						"h": 28
+					},
+					"frame": {
+						"x": 80,
+						"y": 147,
+						"w": 23,
+						"h": 28
+					}
+				},
+				{
+					"filename": "knight_2",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 38,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 1,
+						"w": 26,
+						"h": 29
+					},
+					"frame": {
+						"x": 84,
+						"y": 116,
+						"w": 26,
+						"h": 29
+					}
+				},
+				{
+					"filename": "peasant_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 23,
+						"h": 28
+					},
+					"frame": {
+						"x": 105,
+						"y": 147,
+						"w": 23,
+						"h": 28
+					}
+				},
+				{
+					"filename": "swordsman_0",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 33,
+						"h": 30
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 1,
+						"w": 26,
+						"h": 29
+					},
+					"frame": {
+						"x": 112,
+						"y": 116,
+						"w": 26,
+						"h": 29
+					}
+				},
+				{
+					"filename": "tree_peasant_1",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 23,
+						"h": 28
+					},
+					"frame": {
+						"x": 130,
+						"y": 147,
+						"w": 23,
+						"h": 28
+					}
+				},
+				{
+					"filename": "tree_peasant_3",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 25,
+						"h": 28
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 23,
+						"h": 28
+					},
+					"frame": {
+						"x": 140,
+						"y": 116,
+						"w": 23,
+						"h": 28
 					}
 				}
 			]
@@ -351,6 +645,6 @@
 	"meta": {
 		"app": "https://www.codeandweb.com/texturepacker",
 		"version": "3.0",
-		"smartupdate": "$TexturePacker:SmartUpdate:4013afce344d1036cc0913f1c9edc3f3:2063506571bb13e2426936e72d9600a4:a5fe7db4b869eb0f3e0b2940b9577ea8$"
+		"smartupdate": "$TexturePacker:SmartUpdate:fcad766eb7c7067eb7f63fa34c30f476:300afd1a174a33cf3182902fc67f7f73:a5fe7db4b869eb0f3e0b2940b9577ea8$"
 	}
 }
