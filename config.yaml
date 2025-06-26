@@ -180,9 +180,9 @@ params:
         featuredLink:
           enable: true
         content: |
-          **Full-Time Backend Development and Full-Stack at Riskified
+          **Full-Time Backend Development and Full-Stack at Riskified**
   
-          **General Responsibilities
+          **General Responsibilities**
         
           - **Lead development of key features and integrations**
               Drive the full development lifecycle—including technical research, cross-team collaboration (Product, BI, Data, Integration Engineering), and system design. Take into account existing architecture, fault tolerance, scalability, and security best practices.
@@ -202,7 +202,7 @@ params:
           - **Recruitment**
               Conduct technical interviews as part of the peer hiring process.
           
-          **Backend Developer — Connect Team
+          **Backend Developer — Connect Team**
         
           - **Third-party integrations**
               Integrated with payment service providers (e.g., PayPal, Stripe), including API research, direct communication with such services, and applied business logic.
@@ -213,7 +213,7 @@ params:
           - **Entity management**
               Owned the lifecycle and logic of Riskified’s chargeback entity—processing incoming webhooks from payment providers and publishing relevant chargeback events.
           
-          **Backend / Full-Stack Developer — Chargeback Management System (CBMS)
+          **Backend / Full-Stack Developer — Chargeback Management System (CBMS)**
         
           - **Ethoca integration**
               Led the integration of Ethoca’s (a Mastercard company) credit card transaction alerts, including partner communication, system design, and epic decomposition. Collaborated closely with Product, BI, and Design teams.
